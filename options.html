@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options - EzCooked</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <h2>📖 EzCooked Options</h2>
+
+    <div class="option-group">
+        <div class="option-title">🔍 Recipe Detection</div>
+        <label>
+            <input type="checkbox" id="autoDetect">
+            Enable automatic recipe detection
+        </label>
+        
+        <label>
+            <input type="checkbox" id="showPopup">
+            Automatically display a notification on recipe pages
+        </label>
+    </div>
+
+    <div class="option-group">
+        <div class="option-title">✏️ Detection Settings</div>
+        <label>
+            Detection keywords (separated by commas):
+            <input type="text" id="keywords">
+        </label>
+        <p><small>These keywords are used to identify recipe pages.</small></p>
+    </div>
+
+    <div class="credit-group">
+        <p><small>Created by Nev0</small></p>
+    </div>
+
+    <button id="saveButton">💾 Save</button>
+    <div id="statusMessage"></div>
+
+    <script src="options.js"></script>
+</body>
+</html>
