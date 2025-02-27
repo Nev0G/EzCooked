@@ -24,7 +24,18 @@
     },
     "content_scripts": [
       {
-        "matches": ["<all_urls>"],
+        "matches": [
+  "*://www.allrecipes.com/*",
+  "*://www.marmiton.org/*",
+  "*://www.750g.com/*",
+  "*://www.cuisineaz.com/*",
+  "*://www.epicurious.com/*",
+  "*://www.seriouseats.com/*",
+  "*://www.bbcgoodfood.com/*",
+  "*://www.foodnetwork.com/*",
+  "*://tasty.co/*",
+  "*://www.simplyrecipes.com/*"
+],
         "js": ["content.js"]
       }
     ],
